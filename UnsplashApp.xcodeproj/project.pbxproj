@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41BC54F546727264404E3BB5 /* Pods_UnsplashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */; };
 		4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9829093A3600772546 /* AppDelegate.swift */; };
 		4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9A29093A3600772546 /* SceneDelegate.swift */; };
 		4AA31D9D29093A3600772546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9C29093A3600772546 /* ViewController.swift */; };
 		4AA31DA029093A3600772546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA31D9E29093A3600772546 /* Main.storyboard */; };
 		4AA31DA229093A3700772546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA31DA129093A3700772546 /* Assets.xcassets */; };
 		4AA31DA529093A3700772546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA31DA329093A3700772546 /* LaunchScreen.storyboard */; };
+		4AA31DB029095C8600772546 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DAF29095C8600772546 /* PhotoViewModel.swift */; };
+		4AA31DB229095D2C00772546 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DB129095D2C00772546 /* Photo.swift */; };
+		4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DB62909B64500772546 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2958037FD48468CC9636F162 /* Pods-UnsplashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashApp.debug.xcconfig"; path = "Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4AA31D9529093A3600772546 /* UnsplashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA31D9829093A3600772546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA31D9A29093A3600772546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		4AA31DA129093A3700772546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA31DA429093A3700772546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA31DA629093A3700772546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA31DAF29095C8600772546 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		4AA31DB129095D2C00772546 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4AA31DB62909B64500772546 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9A2AC67B847FE2B7F6B408E /* Pods-UnsplashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashApp.release.xcconfig"; path = "Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp.release.xcconfig"; sourceTree = "<group>"; };
+		C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnsplashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BC54F546727264404E3BB5 /* Pods_UnsplashApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				4AA31D9729093A3600772546 /* UnsplashApp */,
 				4AA31D9629093A3600772546 /* Products */,
+				D8DF26FD081F496E6CF66ECB /* Pods */,
+				CE4606CDA7A564978212AAA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,75 @@
 		4AA31D9729093A3600772546 /* UnsplashApp */ = {
 			isa = PBXGroup;
 			children = (
+				4AA31DB52909AF5A00772546 /* Controllers */,
+				4AA31DAE2909483D00772546 /* View */,
+				4AA31DAD2909482D00772546 /* ViewModel */,
+				4AA31DAC2909482400772546 /* Model */,
 				4AA31D9829093A3600772546 /* AppDelegate.swift */,
 				4AA31D9A29093A3600772546 /* SceneDelegate.swift */,
-				4AA31D9C29093A3600772546 /* ViewController.swift */,
-				4AA31D9E29093A3600772546 /* Main.storyboard */,
 				4AA31DA129093A3700772546 /* Assets.xcassets */,
-				4AA31DA329093A3700772546 /* LaunchScreen.storyboard */,
 				4AA31DA629093A3700772546 /* Info.plist */,
 			);
 			path = UnsplashApp;
+			sourceTree = "<group>";
+		};
+		4AA31DAC2909482400772546 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31DB129095D2C00772546 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AA31DAD2909482D00772546 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31DAF29095C8600772546 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4AA31DAE2909483D00772546 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31D9E29093A3600772546 /* Main.storyboard */,
+				4AA31DA329093A3700772546 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AA31DB52909AF5A00772546 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31DB8290ADA6F00772546 /* HomeCell */,
+				4AA31D9C29093A3600772546 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4AA31DB8290ADA6F00772546 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31DB62909B64500772546 /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		CE4606CDA7A564978212AAA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8DF26FD081F496E6CF66ECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2958037FD48468CC9636F162 /* Pods-UnsplashApp.debug.xcconfig */,
+				A9A2AC67B847FE2B7F6B408E /* Pods-UnsplashApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AA31DA929093A3700772546 /* Build configuration list for PBXNativeTarget "UnsplashApp" */;
 			buildPhases = (
+				146800A9E44D9124817BDECE /* [CP] Check Pods Manifest.lock */,
 				4AA31D9129093A3600772546 /* Sources */,
 				4AA31D9229093A3600772546 /* Frameworks */,
 				4AA31D9329093A3600772546 /* Resources */,
+				F749F254D6F05DE659527486 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +208,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		146800A9E44D9124817BDECE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnsplashApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F749F254D6F05DE659527486 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AA31D9129093A3600772546 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */,
+				4AA31DB029095C8600772546 /* PhotoViewModel.swift in Sources */,
 				4AA31D9D29093A3600772546 /* ViewController.swift in Sources */,
 				4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */,
 				4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */,
+				4AA31DB229095D2C00772546 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +402,7 @@
 		};
 		4AA31DAA29093A3700772546 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2958037FD48468CC9636F162 /* Pods-UnsplashApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +415,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,14 +423,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ms.com.UnsplashApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4AA31DAB29093A3700772546 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A2AC67B847FE2B7F6B408E /* Pods-UnsplashApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +447,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ms.com.UnsplashApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
