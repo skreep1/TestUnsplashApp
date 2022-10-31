@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     var photos =  [Photo]()
     private var photoViewModel = PhotoViewModel()
     
-    @IBOutlet weak var homeCV: UICollectionView!
+    @IBOutlet weak var homeCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,15 @@ class ViewController: UIViewController {
             case .success(let data):
                 self.photos = data
                 DispatchQueue.main.async {
-                    self.homeCV.reloadData()
+                    self.homeCollectionView.reloadData()
                 }
             case .failure(let err):
                 print("error")
                 break
             }
         }
-        self.homeCV.dataSource = self
-        self.homeCV.delegate = self
+        self.homeCollectionView.dataSource = self
+        self.homeCollectionView.delegate = self
         
     }
     
@@ -44,10 +44,20 @@ extension ViewController:  UICollectionViewDataSource, UICollectionViewDelegate 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomeCollectionViewCell
+        
+        cell.layer.cornerRadius = 10
         let photo = photos[indexPath.row]
         cell.setup(photo: photo)
         return cell
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UICollectionViewCell,
+        let indexPath = self.homeCollectionView.indexPath(for: cell) {
+        let vc = segue.destination as! PhotoDetailViewController
+            vc.photo = photos[indexPath.row]
+                 
+        }
     }
     
     

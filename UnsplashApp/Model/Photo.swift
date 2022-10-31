@@ -17,9 +17,18 @@ struct Photo: Codable {
     let height: Int
     let likes: Int
     let urls: URLs
+    let user: Users
 }
 struct URLs: Codable {
     let raw: String
     let full: String
     let thumb: String
+}
+
+struct Users: Codable {
+    let profile_image: ProfileImage
+    let name: String
+}
+struct ProfileImage: Codable {
+    let large: String
 }

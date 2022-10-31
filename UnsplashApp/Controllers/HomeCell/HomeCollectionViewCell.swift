@@ -10,14 +10,11 @@ import Kingfisher
 
 class HomeCollectionViewCell: UICollectionViewCell {
 
-    
     @IBOutlet weak var image: UIImageView!
-    // @IBOutlet weak var test: UILabel!
     
     func setup(photo: Photo) {
-        let url = URL(string: photo.urls.thumb)
+        let url = URL(string: photo.urls.full)
         image.kf.setImage(with: url)
-      //  self.test.text = photo.created_at
     }
     
     

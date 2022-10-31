@@ -17,6 +17,7 @@
 		4AA31DB029095C8600772546 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DAF29095C8600772546 /* PhotoViewModel.swift */; };
 		4AA31DB229095D2C00772546 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DB129095D2C00772546 /* Photo.swift */; };
 		4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31DB62909B64500772546 /* HomeCollectionViewCell.swift */; };
+		4AB543A0290FF57B00CAD7DC /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5439F290FF57B00CAD7DC /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4AA31DAF29095C8600772546 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		4AA31DB129095D2C00772546 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4AA31DB62909B64500772546 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4AB5439F290FF57B00CAD7DC /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		A9A2AC67B847FE2B7F6B408E /* Pods-UnsplashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashApp.release.xcconfig"; path = "Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp.release.xcconfig"; sourceTree = "<group>"; };
 		C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnsplashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			children = (
 				4AA31DB8290ADA6F00772546 /* HomeCell */,
 				4AA31D9C29093A3600772546 /* ViewController.swift */,
+				4AB5439F290FF57B00CAD7DC /* PhotoDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */,
 				4AA31DB029095C8600772546 /* PhotoViewModel.swift in Sources */,
 				4AA31D9D29093A3600772546 /* ViewController.swift in Sources */,
+				4AB543A0290FF57B00CAD7DC /* PhotoDetailViewController.swift in Sources */,
 				4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */,
 				4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */,
 				4AA31DB229095D2C00772546 /* Photo.swift in Sources */,

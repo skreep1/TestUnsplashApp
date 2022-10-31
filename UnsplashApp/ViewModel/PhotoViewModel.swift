@@ -15,19 +15,20 @@ class PhotoViewModel {
     var photo: [Photo] = []
     
     // MARK: func fetchPhoto
-    func fetchPhoto(completion: @escaping (Result<[Photo], Error>) -> Void){
-        let url = URL(string: "https://api.unsplash.com/photos")
-        var request = URLRequest(url: url!)
-        request.httpMethod = "GET"
-        request.setValue("Client-ID \(key)", forHTTPHeaderField: "Authorization")
+    func fetchPhoto(completion: @escaping (Result<[Photo], Error>) -> Void) {
+        let url = URL(string: "https://api.unsplash.com/photos/random/?count=30&client_id=\(key)")
+//        var request = URLRequest(url: url!)
+//        request.httpMethod = "GET"
+//        request.setValue("Client-ID \(key)", forHTTPHeaderField: "Authorization")
         
-        URLSession.shared.dataTask(with: request) { data, response, error in
+        URLSession.shared.dataTask(with: url!) { data, response, error in
+            
             if let data = data {
                 do {
                     let image = try JSONDecoder().decode([Photo].self, from: data)
                     self.photo.append(contentsOf: image)
                     completion(.success(self.photo))
-                    print(image)
+                  //  print(image)
                     
                 } catch let error {
                     completion(.failure(error))
