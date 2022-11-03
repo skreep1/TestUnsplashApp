@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		41BC54F546727264404E3BB5 /* Pods_UnsplashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */; };
+		4A60572F2910700700B71339 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60572E2910700700B71339 /* URLs.swift */; };
+		4A6057312910702700B71339 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6057302910702700B71339 /* Users.swift */; };
+		4A605737291071BA00B71339 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A605736291071BA00B71339 /* Favorite.swift */; };
+		4A60573929117B6200B71339 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60573829117B6200B71339 /* FavoriteViewController.swift */; };
+		4A60573B29117BB800B71339 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60573A29117BB800B71339 /* FavoriteCell.swift */; };
 		4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9829093A3600772546 /* AppDelegate.swift */; };
 		4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9A29093A3600772546 /* SceneDelegate.swift */; };
 		4AA31D9D29093A3600772546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9C29093A3600772546 /* ViewController.swift */; };
@@ -22,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		2958037FD48468CC9636F162 /* Pods-UnsplashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashApp.debug.xcconfig"; path = "Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4A60572E2910700700B71339 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		4A6057302910702700B71339 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		4A605736291071BA00B71339 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		4A60573829117B6200B71339 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		4A60573A29117BB800B71339 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		4AA31D9529093A3600772546 /* UnsplashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA31D9829093A3600772546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA31D9A29093A3600772546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +60,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A6057322910709C00B71339 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				4A605736291071BA00B71339 /* Favorite.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		4A605733291070B700B71339 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4AA31DB8290ADA6F00772546 /* HomeCell */,
+				4AA31D9C29093A3600772546 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A605734291070CB00B71339 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4AB5439F290FF57B00CAD7DC /* PhotoDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4A605735291070DA00B71339 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				4A60573829117B6200B71339 /* FavoriteViewController.swift */,
+				4A60573A29117BB800B71339 /* FavoriteCell.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		4AA31D8C29093A3600772546 = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +130,10 @@
 		4AA31DAC2909482400772546 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A6057322910709C00B71339 /* Realm */,
 				4AA31DB129095D2C00772546 /* Photo.swift */,
+				4A60572E2910700700B71339 /* URLs.swift */,
+				4A6057302910702700B71339 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,9 +158,9 @@
 		4AA31DB52909AF5A00772546 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4AA31DB8290ADA6F00772546 /* HomeCell */,
-				4AA31D9C29093A3600772546 /* ViewController.swift */,
-				4AB5439F290FF57B00CAD7DC /* PhotoDetailViewController.swift */,
+				4A605735291070DA00B71339 /* Favorite */,
+				4A605734291070CB00B71339 /* Detail */,
+				4A605733291070B700B71339 /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,11 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A60573929117B6200B71339 /* FavoriteViewController.swift in Sources */,
 				4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */,
+				4A6057312910702700B71339 /* Users.swift in Sources */,
 				4AA31DB029095C8600772546 /* PhotoViewModel.swift in Sources */,
 				4AA31D9D29093A3600772546 /* ViewController.swift in Sources */,
+				4A60572F2910700700B71339 /* URLs.swift in Sources */,
+				4A605737291071BA00B71339 /* Favorite.swift in Sources */,
 				4AB543A0290FF57B00CAD7DC /* PhotoDetailViewController.swift in Sources */,
 				4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */,
+				4A60573B29117BB800B71339 /* FavoriteCell.swift in Sources */,
 				4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */,
 				4AA31DB229095D2C00772546 /* Photo.swift in Sources */,
 			);

@@ -11,7 +11,6 @@ import Kingfisher
 class ViewController: UIViewController {
     var photos =  [Photo]()
     private var photoViewModel = PhotoViewModel()
-    
     @IBOutlet weak var homeCollectionView: UICollectionView!
     
     override func viewDidLoad() {
