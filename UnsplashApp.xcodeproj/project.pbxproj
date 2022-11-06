@@ -122,7 +122,7 @@
 				4AA31DB52909AF5A00772546 /* Controllers */,
 				4AA31DAE2909483D00772546 /* View */,
 				4AA31DAD2909482D00772546 /* ViewModel */,
-				4AA31DAC2909482400772546 /* Model */,
+				4AA31DAC2909482400772546 /* Models */,
 				4AA31D9829093A3600772546 /* AppDelegate.swift */,
 				4AA31D9A29093A3600772546 /* SceneDelegate.swift */,
 				4AA31DA129093A3700772546 /* Assets.xcassets */,
@@ -131,7 +131,7 @@
 			path = UnsplashApp;
 			sourceTree = "<group>";
 		};
-		4AA31DAC2909482400772546 /* Model */ = {
+		4AA31DAC2909482400772546 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4A6057322910709C00B71339 /* Realm */,
@@ -140,7 +140,7 @@
 				4A60573E29153C4F00B71339 /* Search.swift */,
 				4A6057302910702700B71339 /* Users.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4AA31DAD2909482D00772546 /* ViewModel */ = {

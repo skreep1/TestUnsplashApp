@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil) // remove text "back" in navigation
-        featchPhoto()
+        loadPhoto()
         self.homeCollectionView.dataSource = self
         self.homeCollectionView.delegate = self
     }
@@ -46,7 +46,7 @@ extension ViewController:  UICollectionViewDataSource, UICollectionViewDelegate,
     }
     // MARK: Search Photo
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchViewModel.fetchPhoto(searchTerm: searchText) { result in
+        searchViewModel.fetchSearchPhoto(searchTerm: searchText) { result in
             switch result {
             case .success(let data):
                 self.photos = data
@@ -61,7 +61,7 @@ extension ViewController:  UICollectionViewDataSource, UICollectionViewDelegate,
         }
     }
     // MARK: 
-    private func featchPhoto() {
+    private func loadPhoto() {
         photoViewModel.fetchPhoto { result in
             switch result {
             case .success(let data):
