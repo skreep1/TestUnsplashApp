@@ -7,10 +7,12 @@
 
 import UIKit
 import RealmSwift
+import Kingfisher
 
 class FavoriteViewController: UIViewController {
     private var item: Results<Favorite>!
     private let realm = try! Realm()
+    var favorite: Favorite?
     @IBAction func favoriteButton(_ sender: Any) {
         showDeleteAlert()
     }
@@ -20,16 +22,12 @@ class FavoriteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
         self.favoriteCollectionView.dataSource = self
         self.favoriteCollectionView.delegate = self
-        
-        item = realm.objects(Favorite.self)
-        favoriteCollectionView.reloadData()
+        self.favoriteCollectionView.reloadData()
+        self.item = self.realm.objects(Favorite.self)
         
     }
-    
-    
 }
 extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDelegate  {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,12 +36,12 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favoriteCell", for: indexPath) as! FavoriteCell
-        let item = item[indexPath.row]
-        cell.nameLabel.text = item.name
-        
+        let items = item[indexPath.row]
+        cell.setupFavoriteCell(favorite: items)
+        cell.favoritePhoto.layer.cornerRadius = 10
         return cell
     }
-    
+    // MARK: func delete in realm and Favorite
     private func delete() {
         let delete = item[0]
         try! realm.write {
@@ -52,19 +50,18 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
             print("delete \(delete)")
         }
     }
+    // MARK: alert before delete in favorite photo
     private func showDeleteAlert() {
-        var deleteAlert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: .alert)
-
-        let ok = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+        let deleteAlert = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: .alert)
+        let done = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
             self.delete()
         })
-        
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
             print("Tap Cancel")
         }
-        deleteAlert.addAction(ok)
+        deleteAlert.addAction(done)
         deleteAlert.addAction(cancel)
-
+        
         self.present(deleteAlert, animated: true, completion: nil)
     }
 }

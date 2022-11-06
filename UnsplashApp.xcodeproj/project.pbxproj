@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		41BC54F546727264404E3BB5 /* Pods_UnsplashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4261C352376A721541F0D43 /* Pods_UnsplashApp.framework */; };
+		4A1CC581291558F7006DF294 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CC580291558F7006DF294 /* SearchViewModel.swift */; };
 		4A60572F2910700700B71339 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60572E2910700700B71339 /* URLs.swift */; };
 		4A6057312910702700B71339 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6057302910702700B71339 /* Users.swift */; };
 		4A605737291071BA00B71339 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A605736291071BA00B71339 /* Favorite.swift */; };
 		4A60573929117B6200B71339 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60573829117B6200B71339 /* FavoriteViewController.swift */; };
 		4A60573B29117BB800B71339 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60573A29117BB800B71339 /* FavoriteCell.swift */; };
+		4A60573F29153C4F00B71339 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60573E29153C4F00B71339 /* Search.swift */; };
 		4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9829093A3600772546 /* AppDelegate.swift */; };
 		4AA31D9B29093A3600772546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9A29093A3600772546 /* SceneDelegate.swift */; };
 		4AA31D9D29093A3600772546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA31D9C29093A3600772546 /* ViewController.swift */; };
@@ -27,11 +29,13 @@
 
 /* Begin PBXFileReference section */
 		2958037FD48468CC9636F162 /* Pods-UnsplashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashApp.debug.xcconfig"; path = "Target Support Files/Pods-UnsplashApp/Pods-UnsplashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4A1CC580291558F7006DF294 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4A60572E2910700700B71339 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		4A6057302910702700B71339 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4A605736291071BA00B71339 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		4A60573829117B6200B71339 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		4A60573A29117BB800B71339 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		4A60573E29153C4F00B71339 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		4AA31D9529093A3600772546 /* UnsplashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnsplashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA31D9829093A3600772546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA31D9A29093A3600772546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				4A6057322910709C00B71339 /* Realm */,
 				4AA31DB129095D2C00772546 /* Photo.swift */,
 				4A60572E2910700700B71339 /* URLs.swift */,
+				4A60573E29153C4F00B71339 /* Search.swift */,
 				4A6057302910702700B71339 /* Users.swift */,
 			);
 			path = Model;
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA31DAF29095C8600772546 /* PhotoViewModel.swift */,
+				4A1CC580291558F7006DF294 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A60573F29153C4F00B71339 /* Search.swift in Sources */,
 				4A60573929117B6200B71339 /* FavoriteViewController.swift in Sources */,
 				4AA31DB72909B64500772546 /* HomeCollectionViewCell.swift in Sources */,
 				4A6057312910702700B71339 /* Users.swift in Sources */,
@@ -312,6 +319,7 @@
 				4AA31D9D29093A3600772546 /* ViewController.swift in Sources */,
 				4A60572F2910700700B71339 /* URLs.swift in Sources */,
 				4A605737291071BA00B71339 /* Favorite.swift in Sources */,
+				4A1CC581291558F7006DF294 /* SearchViewModel.swift in Sources */,
 				4AB543A0290FF57B00CAD7DC /* PhotoDetailViewController.swift in Sources */,
 				4AA31D9929093A3600772546 /* AppDelegate.swift in Sources */,
 				4A60573B29117BB800B71339 /* FavoriteCell.swift in Sources */,
@@ -466,11 +474,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnsplashApp/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,11 +510,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnsplashApp/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,19 +1,17 @@
 //
-//  Favorite.swift
+//  FavoriteData.swift
 //  UnsplashApp
 //
-//  Created by Maksim Skrypka on 31.10.2022.
+//  Created by Maksim Skrypka on 05.11.2022.
 //
 
 import Foundation
 import RealmSwift
 
-class Favorite: Object {
+class FavoriteData: Object {
     @objc dynamic var id = 0
     @objc dynamic var name = ""
     @objc dynamic var image = ""
     @objc dynamic var imageProfile = ""
-    
-    
+    @objc dynamic var completed = false
 }
-

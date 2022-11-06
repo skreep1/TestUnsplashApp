@@ -10,13 +10,11 @@ import Foundation
 class PhotoViewModel {
     //        let url = URL(string: "https://api.unsplash.com/photos/random/?count=30&client_id=\(key)")
     private let key = "BJonXMr1gOp83I7Nr49bFtNHaaS4C9TzNJ9F0xUb2yQ"
-    private let authorization = "Authorization"
-    var cell = HomeCollectionViewCell()
     var photo: [Photo] = []
     
     // MARK: func fetchPhoto
     func fetchPhoto(completion: @escaping (Result<[Photo], Error>) -> Void) {
-        let url = URL(string: "https://api.unsplash.com/photos/random/?count=30&client_id=\(key)")
+        let url = URL(string: "https://api.unsplash.com/photos/random/?count=100&client_id=\(key)")
 //        var request = URLRequest(url: url!)
 //        request.httpMethod = "GET"
 //        request.setValue("Client-ID \(key)", forHTTPHeaderField: "Authorization")

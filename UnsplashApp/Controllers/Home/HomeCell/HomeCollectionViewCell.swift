@@ -9,13 +9,11 @@ import UIKit
 import Kingfisher
 
 class HomeCollectionViewCell: UICollectionViewCell {
-
     @IBOutlet weak var image: UIImageView!
     
+    // MARK: Cell for HomeViewController
     func setup(photo: Photo) {
-        let url = URL(string: photo.urls.full)
+        let url = URL(string: photo.urls.thumb)
         image.kf.setImage(with: url)
     }
-    
-    
 }
