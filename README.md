@@ -1,5 +1,5 @@
 
-![Alt Text](https://github.com/skreep1/UnsplashApp/blob/main/screen.jpg)
+![Alt Text](https://github.com/skreep1/TestUnsplashApp/blob/main/screen.jpg)
 
 # Description
  Client-server application that displays photos from [Unsplash](https://unsplash.com/).
