@@ -8,7 +8,6 @@
 import Foundation
 
 class PhotoViewModel {
-   // let url = URL(string: "https://api.unsplash.com/photos/random/?count=100&client_id=\(key)")
     private let key = "BJonXMr1gOp83I7Nr49bFtNHaaS4C9TzNJ9F0xUb2yQ"
     var photo: [Photo] = []
     

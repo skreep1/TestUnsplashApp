@@ -17,6 +17,7 @@ class FavoriteViewController: UIViewController {
         showDeleteAlert()
     }
     
+    
     @IBOutlet weak var favoriteCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favoriteCell", for: indexPath) as! FavoriteCell
         let items = item[indexPath.row]
+
         cell.setupFavoriteCell(favorite: items)
         cell.favoritePhoto.layer.cornerRadius = 10
         return cell

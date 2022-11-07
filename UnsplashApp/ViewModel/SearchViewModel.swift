@@ -8,7 +8,6 @@
 import Foundation
 
 class SearchViewModel {
-    //        let url = URL(string: "https://api.unsplash.com/photos//search/photos/?query=&client_id=\(key)")
     var resultSearch: [Photo] = []
     private let key = "BJonXMr1gOp83I7Nr49bFtNHaaS4C9TzNJ9F0xUb2yQ"
 

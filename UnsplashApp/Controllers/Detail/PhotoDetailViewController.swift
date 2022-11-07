@@ -52,7 +52,6 @@ class PhotoDetailViewController: UIViewController {
         guard let datePublish = photo?.created_at else {return}
         dateLabel.text = "Published on \(date.getFormattedDate(format: datePublish))"
         
-        // self.dateLabel.text = photo?.created_at
     }
     // MARK: func share image
     private func shareImage() {
@@ -70,6 +69,7 @@ class PhotoDetailViewController: UIViewController {
         favorite.image = "\(img)"
         guard let profileImage = photo?.user.profile_image.large else {return}
         favorite.imageProfile = "\(profileImage)"
+        favorite.id = "\(favorite.id)"
         try! realm.write {
             realm.add([favorite])
             print("write \(favorite)")
